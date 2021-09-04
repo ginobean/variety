@@ -176,7 +176,7 @@ class VarietyMetadata(GExiv2.Metadata):
     def __getitem__(self, key):
         if self.has_tag(key):
             if key in self.MULTIPLES:
-                return self.get_tag_multiple(key)
+                return self.try_get_tag_multiple(key)
             elif key in self.NUMBERS:
                 return self.get_tag_long(key)
             else:
