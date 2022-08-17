@@ -1,0 +1,14 @@
+Note to self.
+
+Unfortunately, I am unable to install variety from the source.
+Maybe missing dependencies, etc?
+
+In any case, a viable alternative is simply to install using
+'sudo apt install variety'
+
+Then, make custom changes to the code at:
+/usr/lib/python3/dist-packages/variety/
+
+to perform diagnostics, etc.
+
+17 aug 2022 -- ukim.
