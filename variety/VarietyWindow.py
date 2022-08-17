@@ -1368,8 +1368,8 @@ class VarietyWindow(Gtk.Window):
                             self.post_filter_filename = to_set
                         else:
                             logger.warning(
-                                lambda: "Could not execute filter convert command. "
-                                "Missing ImageMagick or bad filter defined? Resultcode: %d" % result
+                                lambda: "Could not execute filter convert command = [{}]".format(cmd)
+                                # "Missing ImageMagick or bad filter defined? Resultcode: %d" % result
                             )
                 else:
                     to_set = self.post_filter_filename
